@@ -1,0 +1,373 @@
+<!-- ===================== OS & DBMS PAGE ===================== -->
+<div id="os" class="page">
+  <div class="page-inner">
+    <div class="hr-wrapper">
+
+      <!-- MAIN CONTENT ONLY (no left mini sidebar here) -->
+      <div class="hr-main">
+
+        <!-- Header card with toggle buttons on the right -->
+        <section class="hr-header-card">
+          <div class="hr-header-text">
+            <h1>Operating Systems & DBMS – Interview Q&A</h1>
+            <p>
+              Practice core OS and DBMS theory questions with short, interview-focused answers.
+            </p>
+          </div>
+
+          <!-- NEW TOGGLE BUTTONS -->
+          <div class="hr-header-tabs">
+            <button
+              type="button"
+              class="hr-topic-btn active"
+              data-topic="os"
+              onclick="scrollToTopic('os')"
+            >
+              Operating Systems
+            </button>
+            <button
+              type="button"
+              class="hr-topic-btn"
+              data-topic="dbms"
+              onclick="scrollToTopic('dbms')"
+            >
+              DBMS
+            </button>
+          </div>
+        </section>
+
+        <!-- ============ OS QUESTIONS ============ -->
+        <div class="hr-qa-container" id="os-section">
+
+          <div class="hr-question-card">
+            <h3>1. What is an Operating System (OS)?</h3>
+            <button class="hr-toggle-btn" onclick="toggleHrContent('os-q1')">Reveal Answer</button>
+            <div id="os-q1" class="hr-toggle-content">
+              <div class="hr-answer">
+                An operating system is system software that manages computer hardware and software
+                resources. It runs applications, controls memory, files, input/output devices,
+                security, and provides user interfaces so users and programs can use the system.
+              </div>
+            </div>
+          </div>
+
+          <div class="hr-question-card">
+            <h3>2. Define functions of an OS.</h3>
+            <button class="hr-toggle-btn" onclick="toggleHrContent('os-q2')">Reveal Answer</button>
+            <div id="os-q2" class="hr-toggle-content">
+              <div class="hr-answer">
+                Main functions include: process management, memory management, file system
+                management, device/I-O management, security and protection, and providing
+                user interfaces (CLI/GUI) for interaction.
+              </div>
+            </div>
+          </div>
+ <div class="hr-question-card">
+            <h3>3. What are the types of Operating Systems?</h3>
+            <button class="hr-toggle-btn" onclick="toggleContent('os-q3')">Reveal Answer</button>
+            <div id="os-q3" class="hr-toggle-content">
+              <div class="hr-answer">
+                Common types: batch OS, multitasking/time-sharing OS, distributed OS,
+                real-time OS, network OS, and mobile OS.
+              </div>
+            </div>
+          </div>
+
+          <div class="hr-question-card">
+            <h3>4. What is a process?</h3>
+            <button class="hr-toggle-btn" onclick="toggleContent('os-q4')">Reveal Answer</button>
+            <div id="os-q4" class="hr-toggle-content">
+              <div class="hr-answer">
+                A process is a program in execution. It has its own address space, stack,
+                registers, program counter, and is represented in the OS by a Process Control
+                Block (PCB).
+              </div>
+            </div>
+          </div>
+
+          <div class="hr-question-card">
+            <h3>5. What is a thread?</h3>
+            <button class="hr-toggle-btn" onclick="toggleContent('os-q5')">Reveal Answer</button>
+            <div id="os-q5" class="hr-toggle-content">
+              <div class="hr-answer">
+                A thread is a lightweight unit of execution within a process. Multiple threads
+                in the same process share code and data sections but have their own stack and
+                registers.
+              </div>
+            </div>
+          </div>
+
+          <div class="hr-question-card">
+            <h3>6. Explain process vs thread.</h3>
+            <button class="hr-toggle-btn" onclick="toggleContent('os-q6')">Reveal Answer</button>
+            <div id="os-q6" class="hr-toggle-content">
+              <div class="hr-answer">
+                Processes have separate memory spaces and are heavier to create and switch.
+                Threads share the same address space of a process, are lighter, and context
+                switching between threads is faster. However, bugs in one thread can affect
+                the whole process.
+              </div>
+            </div>
+          </div>
+
+          <div class="hr-question-card">
+            <h3>7. What is CPU scheduling?</h3>
+            <button class="hr-toggle-btn" onclick="toggleContent('os-q7')">Reveal Answer</button>
+            <div id="os-q7" class="hr-toggle-content">
+              <div class="hr-answer">
+                CPU scheduling is the OS activity that selects which ready process should get
+                the CPU next, aiming to optimise CPU utilisation, throughput, waiting time,
+                and response time.
+              </div>
+            </div>
+          </div>
+
+          <div class="hr-question-card">
+            <h3>8. Name common CPU scheduling algorithms.</h3>
+            <button class="hr-toggle-btn" onclick="toggleContent('os-q8')">Reveal Answer</button>
+            <div id="os-q8" class="hr-toggle-content">
+              <div class="hr-answer">
+                First-Come First-Served (FCFS), Shortest Job First (SJF), Shortest Remaining Time
+                First (SRTF), Round Robin (RR), and Priority Scheduling (preemptive or non-preemptive).
+              </div>
+            </div>
+          </div>
+
+          <div class="hr-question-card">
+            <h3>9. Define memory management.</h3>
+            <button class="hr-toggle-btn" onclick="toggleContent('os-q9')">Reveal Answer</button>
+            <div id="os-q9" class="hr-toggle-content">
+              <div class="hr-answer">
+                Memory management is the OS function of allocating and deallocating main memory
+                to processes, keeping track of which parts of memory are in use, and preventing
+                processes from interfering with each other’s memory.
+              </div>
+            </div>
+          </div>
+
+          <div class="hr-question-card">
+            <h3>10. What is paging?</h3>
+            <button class="hr-toggle-btn" onclick="toggleContent('os-q10')">Reveal Answer</button>
+            <div id="os-q10" class="hr-toggle-content">
+              <div class="hr-answer">
+                Paging divides logical memory into fixed-size pages and physical memory into
+                frames of the same size. Pages are mapped to frames via a page table, removing
+                external fragmentation.
+              </div>
+            </div>
+          </div>
+
+          <div class="hr-question-card">
+            <h3>11. What is segmentation?</h3>
+            <button class="hr-toggle-btn" onclick="toggleContent('os-q11')">Reveal Answer</button>
+            <div id="os-q11" class="hr-toggle-content">
+              <div class="hr-answer">
+                Segmentation divides memory into variable-sized logical segments such as code,
+                stack, and heap. Each segment has a base and limit; external fragmentation can occur.
+              </div>
+            </div>
+          </div>
+
+          <div class="hr-question-card">
+            <h3>12. Define virtual memory.</h3>
+            <button class="hr-toggle-btn" onclick="toggleContent('os-q12')">Reveal Answer</button>
+            <div id="os-q12" class="hr-toggle-content">
+              <div class="hr-answer">
+                Virtual memory is a memory management technique where the OS uses disk space
+                as an extension of RAM, allowing large processes to execute even if only a part
+                of them is in main memory at a time.
+              </div>
+            </div>
+          </div>
+
+          <div class="hr-question-card">
+            <h3>13. What is a critical section?</h3>
+            <button class="hr-toggle-btn" onclick="toggleContent('os-q13')">Reveal Answer</button>
+            <div id="os-q13" class="hr-toggle-content">
+              <div class="hr-answer">
+                A critical section is a part of code where shared resources (like shared data)
+                are accessed. Only one thread/process should execute its critical section at a
+                time to avoid race conditions.
+              </div>
+            </div>
+          </div>
+
+          <div class="hr-question-card">
+            <h3>14. What is a semaphore?</h3>
+            <button class="hr-toggle-btn" onclick="toggleContent('os-q14')">Reveal Answer</button>
+            <div id="os-q14" class="hr-toggle-content">
+              <div class="hr-answer">
+                A semaphore is a synchronisation primitive (integer variable) used to control
+                access to shared resources. It uses atomic operations like wait(P) and signal(V)
+                to implement mutual exclusion or resource counting.
+              </div>
+            </div>
+          </div>
+
+          <div class="hr-question-card">
+            <h3>15. What are the necessary conditions for deadlock?</h3>
+            <button class="hr-toggle-btn" onclick="toggleContent('os-q15')">Reveal Answer</button>
+            <div id="os-q15" class="hr-toggle-content">
+              <div class="hr-answer">
+                Four Coffman conditions: mutual exclusion, hold and wait, no preemption,
+                and circular wait. If all four hold simultaneously, deadlock can occur.
+              </div>
+            </div>
+          </div>
+
+        </div>
+          <!-- … keep all your other OS questions,
+               just make sure buttons call toggleHrContent('os-qX') … -->
+
+
+
+        <!-- ============ DBMS QUESTIONS ============ -->
+        <div class="hr-qa-container" id="dbms-section">
+
+          <div class="hr-question-card">
+            <h3>1. What is DBMS?</h3>
+            <button class="hr-toggle-btn" onclick="toggleHrContent('db-q1')">Reveal Answer</button>
+            <div id="db-q1" class="hr-toggle-content">
+              <div class="hr-answer">
+                A Database Management System (DBMS) is software used to define, create, store,
+                retrieve, and manage data in databases, while enforcing security, integrity,
+                and efficient access.
+              </div>
+            </div>
+          </div>
+
+          <div class="hr-question-card">
+            <h3>2. What is RDBMS?</h3>
+            <button class="hr-toggle-btn" onclick="toggleHrContent('db-q2')">Reveal Answer</button>
+            <div id="db-q2" class="hr-toggle-content">
+              <div class="hr-answer">
+                A Relational DBMS stores data in tables (relations) consisting of rows and
+                columns and supports relationships between tables using keys.
+                Examples include MySQL, Oracle, and PostgreSQL.
+              </div>
+            </div>
+          </div>
+
+
+          <div class="hr-question-card">
+            <h3>1. What is DBMS?</h3>
+            <button class="hr-toggle-btn" onclick="toggleContent('db-q1')">Reveal Answer</button>
+            <div id="db-q1" class="hr-toggle-content">
+              <div class="hr-answer">
+                A Database Management System (DBMS) is software used to define, create, store,
+                retrieve, and manage data in databases, while enforcing security, integrity,
+                and efficient access.
+              </div>
+            </div>
+          </div>
+
+          <div class="hr-question-card">
+            <h3>2. What is RDBMS?</h3>
+            <button class="hr-toggle-btn" onclick="toggleContent('db-q2')">Reveal Answer</button>
+            <div id="db-q2" class="hr-toggle-content">
+              <div class="hr-answer">
+                A Relational DBMS stores data in tables (relations) consisting of rows and
+                columns and supports relationships between tables using keys.
+                Examples include MySQL, Oracle, and PostgreSQL.
+              </div>
+            </div>
+          </div>
+
+          <div class="hr-question-card">
+            <h3>3. What are tables, tuples, and attributes?</h3>
+            <button class="hr-toggle-btn" onclick="toggleContent('db-q3')">Reveal Answer</button>
+            <div id="db-q3" class="hr-toggle-content">
+              <div class="hr-answer">
+                A table is a collection of related data; a tuple is a row (record) in a table;
+                an attribute is a column (field) describing a property of the entity.
+              </div>
+            </div>
+          </div>
+
+          <div class="hr-question-card">
+            <h3>4. Define Primary Key.</h3>
+            <button class="hr-toggle-btn" onclick="toggleContent('db-q4')">Reveal Answer</button>
+            <div id="db-q4" class="hr-toggle-content">
+              <div class="hr-answer">
+                A primary key is a column or combination of columns that uniquely identifies
+                each row in a table and cannot be NULL.
+              </div>
+            </div>
+          </div>
+
+          <div class="hr-question-card">
+            <h3>5. Explain Foreign Key.</h3>
+            <button class="hr-toggle-btn" onclick="toggleContent('db-q5')">Reveal Answer</button>
+            <div id="db-q5" class="hr-toggle-content">
+              <div class="hr-answer">
+                A foreign key is a column in one table that refers to the primary key in another
+                table. It creates a relationship between tables and enforces referential integrity.
+              </div>
+            </div>
+          </div>
+
+          <div class="hr-question-card">
+            <h3>6. What is normalization?</h3>
+            <button class="hr-toggle-btn" onclick="toggleContent('db-q6')">Reveal Answer</button>
+            <div id="db-q6" class="hr-toggle-content">
+              <div class="hr-answer">
+                Normalization is the process of organizing data to reduce redundancy and
+                update anomalies by splitting tables based on dependencies.
+              </div>
+            </div>
+          </div>
+
+          <div class="hr-question-card">
+            <h3>7. What are 1NF, 2NF, and 3NF?</h3>
+            <button class="hr-toggle-btn" onclick="toggleContent('db-q7')">Reveal Answer</button>
+            <div id="db-q7" class="hr-toggle-content">
+              <div class="hr-answer">
+                1NF: each column holds atomic values, no repeating groups.  
+                2NF: in 1NF and no partial dependency on a composite key.  
+                3NF: in 2NF and no transitive dependency on non-key attributes.
+              </div>
+            </div>
+          </div>
+
+          <div class="hr-question-card">
+            <h3>8. Define ER diagram.</h3>
+            <button class="hr-toggle-btn" onclick="toggleContent('db-q8')">Reveal Answer</button>
+            <div id="db-q8" class="hr-toggle-content">
+              <div class="hr-answer">
+                An Entity–Relationship (ER) diagram is a visual representation of entities,
+                attributes, and relationships used for high-level database design.
+              </div>
+            </div>
+          </div>
+
+          <div class="hr-question-card">
+            <h3>9. What is ACID in database transactions?</h3>
+            <button class="hr-toggle-btn" onclick="toggleContent('db-q9')">Reveal Answer</button>
+            <div id="db-q9" class="hr-toggle-content">
+              <div class="hr-answer">
+                ACID stands for Atomicity, Consistency, Isolation, and Durability – properties
+                that ensure reliable, correct, and permanent database transactions.
+              </div>
+            </div>
+          </div>
+
+          <div class="hr-question-card">
+            <h3>10. Define a transaction.</h3>
+            <button class="hr-toggle-btn" onclick="toggleContent('db-q10')">Reveal Answer</button>
+            <div id="db-q10" class="hr-toggle-content">
+              <div class="hr-answer">
+                A transaction is a logical unit of work that groups one or more database
+                operations. It must either complete fully (COMMIT) or have all its changes
+                undone (ROLLBACK).
+              </div>
+            </div>
+          </div>
+          <!-- … keep all your other DBMS questions,
+               just make sure buttons call toggleHrContent('db-qX') … -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- ================= END OS & DBMS PAGE ===================== -->
